@@ -11,6 +11,7 @@ export function Input({ isLoading = false, ...rest }: Props) {
   return (
     <View style={styles.container}>
       <TextInput
+        testID="input-field"
         style={styles.input}
         placeholderTextColor={theme.colors.gray_400}
         {...rest}
@@ -19,6 +20,7 @@ export function Input({ isLoading = false, ...rest }: Props) {
       {
         isLoading && (
           <ActivityIndicator
+            testID="loading-indicator"
             color={theme.colors.blue_light}
           />
         )
