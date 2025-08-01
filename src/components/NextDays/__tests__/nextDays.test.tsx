@@ -5,7 +5,7 @@ import clearDay from "@assets/clear_day.svg";
 
 describe("Component: NextDays", () => {
   it("should be able to render correctly", () => {
-    const { debug } = render(
+    render(
       <NextDays
         data={[
           {
@@ -46,7 +46,6 @@ describe("Component: NextDays", () => {
         ]}
       />
     );
-    debug();
     expect(screen.getByText("Segunda")).toBeTruthy();
   });
 });
